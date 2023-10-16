@@ -2,7 +2,54 @@
     ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div class="main-page">
+    <div class="row my-auto section1-div">
+        <div class="col my-auto d-flex flex-column">
+            <h1 class="animate__animated animate__fadeInUp animate__fast">Benvenuto su ScuolaVirtuale!</h1>
+            <br />
+            <h2 class="animate__animated animate__fadeInUp animate__fast">Sei un insegnante? <br /><br /> Scopri come puoi gestire la classe in maniera facile e veloce!</h2>
+        </div>
+        <div class="col my-auto">
+            <img class="animate__animated animate__fadeIn animate__fast" src="~/Content/Images/teacher-image.jpeg" alt="">
+        </div>
+    </div>
+
+    <div class="row my-auto section2-div">
+        <div class="col">
+            <img class="animate__animated" src="~/Content/Images/student-image.webp" alt="">
+        </div>
+        <div class="col my-auto d-flex flex-column">
+            <h2 class="animate__animated">Sei un alunno? </h2>
+            <h2 class="animate__animated">Accedi per avere il diario digitale!</h2>
+        </div>
+    </div>
+
+    <div class="accordion" id="accordion">
+        <h2 class="mb-5">FAQ</h2>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                Che cos'è ScuolaVirtuale?
+            </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+                <strong>È una webapp per la gestione amministrativa di una scuola.</strong>  <br />
+                Permette la gestione dell'attività scolastica sia per gli insegnanti che per gli alunni.                
+            </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                Il servizio è gratuito?
+            </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+               <strong>Il servizio è completamente gratuito</strong>     
+            </div>
+            </div>
+        </div>
+    </div>
 </div>

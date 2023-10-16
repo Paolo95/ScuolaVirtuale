@@ -1,0 +1,33 @@
+.main-page .section1-div,
+.main-page .section2-div
+{
+    height: 100vh;
+}
+
+.main-page .section1-div h1
+{
+    font-size: 60px;
+    font-weight: 600;
+}
+
+.main-page .section1-div img
+{
+    border-radius: 15px;
+    width: 800px;
+}
+
+.main-page .section2-div img
+{
+    border-radius: 15px;
+    width: 800px;
+}
+
+.main-page .section2-div h2
+{
+    text-align: right;
+}
+
+.accordion h2
+{
+    text-align: center;
+}

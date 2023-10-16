@@ -5,15 +5,16 @@ using ScuolaVirtuale.Models;
 
 namespace ScuolaVirtuale.Controllers;
 
-public class HomeController : Controller
+public class UserPageController : Controller
 {
-    private readonly ILogger<HomeController> _logger;
+    private readonly ILogger<UserPageController> _logger;
 
-    public HomeController(ILogger<HomeController> logger)
+    public UserPageController(ILogger<UserPageController> logger)
     {
         _logger = logger;
     }
 
+    [Authorize]
     public IActionResult Index()
     {
         return View();
